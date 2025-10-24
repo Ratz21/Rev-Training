@@ -1,0 +1,77 @@
+string fucntions in py ------
+
+All of these work on string objects like str1 = "String hello".
+Most of them don’t modify the original string, because strings in Python are immutable — they just return a new value.
+
+
+1: case conversion:>
+| Method         | Example                  | Output           | Description                           |
+| -------------- | ------------------------ | ---------------- | ------------------------------------- |
+| `upper()`      | `"hello".upper()`        | `'HELLO'`        | Converts to uppercase                 |
+| `lower()`      | `"HELLO".lower()`        | `'hello'`        | Converts to lowercase                 |
+| `title()`      | `"python rocks".title()` | `'Python Rocks'` | Capitalizes first letter of each word |
+| `capitalize()` | `"python".capitalize()`  | `'Python'`       | Only first character uppercase        |
+| `swapcase()`   | `"PyThOn".swapcase()`    | `'pYtHoN'`       | Swaps case of each character          |
+
+2:checking Content
+
+These return True or False.
+
+| Method      | Example                   | Output | Description           |
+| ----------- | ------------------------- | ------ | --------------------- |
+| `isalpha()` | `"abc".isalpha()`         | `True` | All letters           |
+| `isdigit()` | `"123".isdigit()`         | `True` | All digits            |
+| `isalnum()` | `"abc123".isalnum()`      | `True` | Letters + digits only |
+| `isspace()` | `"   ".isspace()`         | `True` | Only whitespace       |
+| `isupper()` | `"HELLO".isupper()`       | `True` | All uppercase         |
+| `islower()` | `"hello".islower()`       | `True` | All lowercase         |
+| `istitle()` | `"Hello World".istitle()` | `True` | Title case            |
+
+3: Searching / Finding
+
+| Method         | Example                    | Output | Description                                            |
+| -------------- | -------------------------- | ------ | ------------------------------------------------------ |
+| `find()`       | `"hello".find("l")`        | `2`    | Returns index of first occurrence (or -1 if not found) |
+| `rfind()`      | `"hello".rfind("l")`       | `3`    | Last occurrence                                        |
+| `index()`      | `"hello".index("l")`       | `2`    | Like find(), but raises error if not found             |
+| `count()`      | `"hello".count("l")`       | `2`    | Counts how many times substring occurs                 |
+| `startswith()` | `"hello".startswith("he")` | `True` | Checks if string starts with substring                 |
+| `endswith()`   | `"hello".endswith("lo")`   | `True` | Checks if string ends with substring                   |
+
+
+4: Replacing and Modifying
+
+| Method         | Example                                     | Output                | Description                                    |
+| -------------- | ------------------------------------------- | --------------------- | ---------------------------------------------- |
+| `replace()`    | `"hello world".replace("world", "Rajdeep")` | `'hello Rajdeep'`     | Replace old substring with new                 |
+| `strip()`      | `"  hello  ".strip()`                       | `'hello'`             | Removes whitespace from both ends              |
+| `lstrip()`     | `"  hello".lstrip()`                        | `'hello'`             | Removes left spaces                            |
+| `rstrip()`     | `"hello  ".rstrip()`                        | `'hello'`             | Removes right spaces                           |
+| `join()`       | `"-".join(["one","two"])`                   | `'one-two'`           | Joins list elements into a string              |
+| `split()`      | `"one two".split()`                         | `['one','two']`       | Splits string into list                        |
+| `partition()`  | `"abc-def".partition("-")`                  | `('abc', '-', 'def')` | Splits into 3 parts (before, separator, after) |
+| `expandtabs()` | `"Hello\tWorld".expandtabs(4)`              | `'Hello   World'`     | Replaces tabs with spaces                      |
+
+5: Alignment and Formatting 
+
+| Method     | Example               | Output     | Description                        |
+| ---------- | --------------------- | ---------- | ---------------------------------- |
+| `center()` | `"hi".center(6, "-")` | `'--hi--'` | Centers string with fill character |
+| `ljust()`  | `"hi".ljust(5, ".")`  | `'hi...'`  | Left align                         |
+| `rjust()`  | `"hi".rjust(5, ".")`  | `'...hi'`  | Right align                        |
+| `zfill()`  | `"7".zfill(3)`        | `'007'`    | Pads string with zeros             |
+
+6: Encoding and Checking
+
+| Method     | Example             | Output     | Description                   |
+| ---------- | ------------------- | ---------- | ----------------------------- |
+| `encode()` | `"hello".encode()`  | `b'hello'` | Converts to bytes             |
+| `decode()` | `b'hello'.decode()` | `'hello'`  | Converts bytes back to string |
+
+7: Special Utility Methods
+
+| Method                        | Example                                   | Output             | Description                                 |
+| ----------------------------- | ----------------------------------------- | ------------------ | ------------------------------------------- |
+| `format()`                    | `"My name is {}".format("Raj")`           | `'My name is Raj'` | String formatting (Python 3 style)          |
+| `casefold()`                  | `"HELLO".casefold()`                      | `'hello'`          | Stronger version of lower() for comparisons |
+| `maketrans()` + `translate()` | `"abc".translate(str.maketrans("a","x"))` | `'xbc'`            | Replaces chars using translation table      |

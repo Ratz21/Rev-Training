@@ -1,0 +1,23 @@
+Namespaces in Py ------------------
+
+A namespace is just a collection of names (identifiers) mapped to objects in memory.
+{
+  'x': 10,
+  'y': 'Rajdeep'
+}
+
+(So when Python sees x, it goes:
+ that label points to the integer 10.
+Thats all a namespace is — a map from names to objects )
+
+namespace is a container thats hold a mapping between names identifiers and objects it helps avoid naming conflicts.
+
+| Namespace Type | Scope                   | Lifetime                       |
+| -------------- | ----------------------- | ------------------------------ |
+| **Built-in**   | Available everywhere    | As long as Python runs         |
+| **Global**     | Whole module or file    | Until program ends             |
+| **Enclosing**  | Inside nested functions | While outer function is active |
+| **Local**      | Inside a function       | While function runs            |
+
+
+

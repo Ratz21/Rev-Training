@@ -1,0 +1,12 @@
+OOP 
+var == object
+
+implicit inference == data type (means automatically it detects the data type)
+
+DTypes - 
+
+class 
+int
+float
+str
+bool 

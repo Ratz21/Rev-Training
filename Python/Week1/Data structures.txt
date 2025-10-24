@@ -1,0 +1,14 @@
+Data structures 
+
+
+| Type          | Mutable? | Ordered?        | Allows Duplicates? | Example             |
+| ------------- | -------- | --------------- | ------------------ | ------------------- |
+| **list**      | ✅ Yes    | ✅ Yes           | ✅ Yes              | `[1, 2, 3]`         |
+| **tuple**     | ❌ No     | ✅ Yes           | ✅ Yes              | `(1, 2, 3)`         |
+| **set**       | ✅ Yes    | ❌ No            | ❌ No               | `{1, 2, 3}`         |
+| **frozenset** | ❌ No     | ❌ No            | ❌ No               | `frozen set([1, 2])` |
+| **dict**      | ✅ Yes    | ✅ (since Py3.7) | ❌ Keys unique      | `{"a": 1, "b": 2}`  |
+| **str**       | ❌ No     | ✅ Yes           | ✅ Yes              | `"Rajdeep"`         |
+
+
+
