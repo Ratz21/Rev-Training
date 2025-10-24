@@ -1,0 +1,164 @@
+Data structures 
+
+
+| Type          | Mutable? | Ordered?        | Allows Duplicates? | Example             |
+| ------------- | -------- | --------------- | ------------------ | ------------------- |
+| **list**      | ✅ Yes    | ✅ Yes           | ✅ Yes              | `[1, 2, 3]`         |
+| **tuple**     | ❌ No     | ✅ Yes           | ✅ Yes              | `(1, 2, 3)`         |
+| **set**       | ✅ Yes    | ❌ No            | ❌ No               | `{1, 2, 3}`         |
+| **frozenset** | ❌ No     | ❌ No            | ❌ No               | `frozen set([1, 2])` |
+| **dict**      | ✅ Yes    | ✅ (since Py3.7) | ❌ Keys unique      | `{"a": 1, "b": 2}`  |
+| **str**       | ❌ No     | ✅ Yes           | ✅ Yes              | `"Rajdeep"`         |
+
+
+
+1: List -> Dynamic array — ordered, mutable, duplicates and can hold mixed data types.
+note string is immutable in python  bcz it cannot be changed after creationi 
+nums = [10, 20, 30]
+nums.append(40)
+nums.remove(20)
+print(nums)        # [10, 30, 40]
+
+
+Main features:
+
+Indexed (nums[0])
+
+Mutable (can change)
+
+Allows duplicates
+
+Supports slicing (nums[1:3])
+
+Use it for: stacks, queues, dynamic arrays.
+
+2-> Tuple
+
+Immutable list — same as a list, but frozen. it can duplicates only set contains non duplicates value 
+
+t = (1, 2, 3) 
+print(t[0])       
+
+
+Main features:
+
+Ordered
+
+Immutable
+
+Faster than lists (Python can optimize storage)
+
+Use it for: fixed data, dictionary keys, or anything that shouldn’t change.
+
+
+3-> Set
+
+Unordered collection of unique items.
+
+s = {1, 2, 3, 3}
+print(s)           # {1, 2, 3}
+s.add(4)
+s.remove(2)
+
+
+Main features:
+
+No duplicates
+
+Unordered (no indexing)
+
+Supports mathematical set operations: union, intersection, difference
+
+Use it for: fast membership checking, deduplication, or set algebra.
+
+4-> Dictionary (dict)
+
+Key-value storage — Python’s built-in hash map.
+
+student = {"name": "Rajdeep", "age": 21}
+print(student["name"])      # Rajdeep
+student["age"] = 22
+
+
+Main features:
+
+Key must be immutable (str, int, tuple)
+
+Values can be anything
+
+Fast lookups via hashing
+
+Use it for: mapping relationships, counting, caching, JSON-style data.
+
+5-> String (str)
+
+Technically a sequence type — immutable array of characters.
+
+name = "Rajdeep"
+print(name[0])        # R
+print(name[::-1])     # peedjaR
+
+
+Main features:
+
+Indexed
+
+Immutable
+
+Supports slicing and concatenation
+
+Use it for: text manipulation (obviously).
+
+6-> . Range
+
+Sequence of numbers — used mainly for looping.
+
+for i in range(5):
+    print(i)
+
+
+Main features:
+
+Immutable
+
+Memory efficient (doesn’t store all numbers at once)
+
+Use it for: iteration without storing entire sequences.
+
+
+7-> Boolean
+
+Only two values: True and False.
+
+flag = True
+print(flag and False)    # False
+
+
+Main features:
+
+Subclass of int (so True + True == 2)
+
+Used in logic, comparisons, conditions
+
+8-> NoneType
+
+Represents “nothing.”
+
+x = None
+print(x is None)    # True
+
+
+Use it for: default values, null checks, or function placeholders.
+
+9-> Bytes, Bytearray, Memoryview
+
+Binary data types — used for I/O, files, networking, etc.
+
+b = b"Hello"
+arr = bytearray(b)
+print(arr)          # bytearray(b'Hello')
+
+
+
+
+
