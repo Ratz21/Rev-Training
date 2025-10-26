@@ -1,0 +1,77 @@
+25/10/25
+
+PyCharm IDE 
+creating project and storing it in the revature and add adding it to the path of revature training .
+
+*after creating folder -> then right click and create new directory -> naming basic -prg
+
+*creating a basic opt file 
+
+*Then looking out for console , terminal , git operations 
+
+*terminal means talking to the project / console is for gui 
+
+*writing hello world print stmt
+
+*python is identation language 
+
+
+*# running basic programs
+print("hello world")
+
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+print('sum: ',num1 + num2)
+print('difference: ',num1 - num2)
+print('Product: ',num1 * num2)
+print('int Div: ',num1 // num2)
+print('remainder', num1 % num2)
+print('Power: ', num1 ** num2)
+
+* 2nd program (conditional stmts)
+
+if -> if , if else , nested if , if else ladder
+      match case stmts in py not switch case 
+
+loop-> do , while , for range , for iterable 
+
+if a>b: put a colon to start a code block 
+     codejdndn 
+     dofe    code 
+else: 
+     inside else block 
+     should be in this block 
+
+* learnt abt f string price = 85
+    money = f"{price}dollars" # why it said to me remove redundant parenthesis
+    print(money)
+
+
+
+* codes for Armstrong sum and for i in range 
+* then functions --
+
+# functions
+
+# predefined / system / built in  / lambda function
+    def fun(parameters):
+        print(parameters)
+
+
+
+* python can return multiple type of datatypes 
+
+
+* LEGB ->>>>
+
+| Level             | Example of where it lives       | Description                                 |
+| ----------------- | ------------------------------- | ------------------------------------------- |
+| **L (Local)**     | Inside the current function     | Closest scope                               |
+| **E (Enclosing)** | Any outer function              | Nested function level                       |
+| **G (Global)**    | Top-level of your script/module | Visible to all functions                    |
+| **B (Built-in)**  | Python itself                   | Keywords, functions like `len()`, `print()` |
+
+
+
+
+       
