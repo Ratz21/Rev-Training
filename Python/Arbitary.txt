@@ -1,0 +1,37 @@
+27/10/25
+
+
+Kwargs and arbitrary in Py ->
+
+In Python, you can create functions that don’t know beforehand how many arguments they’ll receive.
+
+That’s what arbitrary arguments are — they let your function handle any number of values (positional or keyword).
+
+| Type                     | Symbol     | Meaning                                      |
+| ------------------------ | ---------- | -------------------------------------------- |
+| **Arbitrary positional** | `*args`    | accepts *any number of positional arguments* |
+| **Arbitrary keyword**    | `**kwargs` | accepts *any number of keyword arguments*    |
+
+
+* scope 
+* iterators
+* Pylink
+* Modules
+* Packages 
+
+
+*pylink -> installation of pylink pip install pylink
+
+*pylint\basic_prg\ for path
+
+
+
+
+* Modules
+if i write more than one class in one prg is called module. A module is just a single .py file that contains Python code — functions, classes, variables, or executable statements — which can be imported and reused in another file. Modules help with code reusability and organization.You can import entire modules or just specific parts.
+
+
+
+* Packages
+
+package will have multiple module
