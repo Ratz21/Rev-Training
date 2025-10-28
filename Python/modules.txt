@@ -1,0 +1,45 @@
+28/10/25
+
+
+
+learned how to build, organize, and clean up Python programs using modules, packages, and linting tools while practicing real examples like simple interest and shape calculations.
+
+Modules: Individual .py files containing reusable functions or classes. You import them using import module_name.
+
+Packages: Folders that group related modules, marked by an __init__.py file. Called using from package.module import function.
+
+Simple Interest Calculation: You learned to take user input, use the formula (P * R * T) / 100, and format results using f-strings.
+
+Shape Calculations: Functions for computing area and perimeter using formulas and built-in modules like math.
+
+PyLint: A code checker ensuring your code follows best practices and clean syntax (PEP8).
+
+Import Statements: You can import modules in multiple ways — standard, selective, alias-based, or package-specific — for cleaner, modular programs.
+
+
+OOP
+Object
+class
+abstraction
+encapsulation
+inheritance
+polymorphism 
+garbage collection
+dynamic binding
+exception handling 
+
+empid , ename , basicpay=bp
+da 10% hra 5% pf 3%
+gp = bp+da+hra
+deducation = pf
+np = gp - ded
+
+
+garbage collection -> collecting all the used things constructor concept 
+
+abstraction -> pvt public procted / access specifiers and then getters and setters in py
+
+inheritance / encapsulation 
+
+
+-> single line and multi line inhertitance do this today itself 	
