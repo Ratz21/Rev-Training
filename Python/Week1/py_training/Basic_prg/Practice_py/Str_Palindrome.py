@@ -1,13 +1,37 @@
-string = input("Enter a string: ")
+"""check whether a string is palindrome or not?"""
 
-#normalize it bcz humans write in upper case or lower case
+# string = input("Enter a string: ")
+#
+# #normalize it bcz humans write in upper case or lower case it removes spaces
+#
+# string = string.replace(" ", "").lower()
+#
+# if string == string[::-1]:
+#     print("is a palindrome")
+# else:
+#     print("is not a palindrome")
+
+
+
+
+string = input("Enter a string: ")
 
 string = string.replace(" ", "").lower()
 
-if string == string[::-1]:
-    print("is a palindrome")
+if string == string == string[::-1]:
+  print("is a palindrome")
 else:
     print("is not a palindrome")
+
+
+
+
+
+
+
+
+
+
 
 
 """
