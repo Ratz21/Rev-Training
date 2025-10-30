@@ -1,24 +1,65 @@
-"""TRY AND CATCH BLOCK"""
+# """TRY AND CATCH BLOCK"""
+# from oop.ArithCalculations import ArithCalculations
+#
+# n1= int(input("Enter a number:"))
+# n2= int(input("Enter another number: "))
+#
+# calc = ArithCalculations(n1,n2)
+# print(f'{calc.add()}')
+# print(f'{calc.sub()}')
+# print(f'{calc.mult()}')
+#
+#
+# try:
+#     res= calc.div()
+#     print(res)
+#
+# except ZeroDivisionError:
+#     print('0 in denominator')
+#
+# else:
+#     print(res)
+#
+# finally:
+#     print('Done!!')
+
+
 from oop.ArithCalculations import ArithCalculations
 
-n1= int(input("Enter a number:"))
-n2= int(input("Enter another number: "))
 
-calc = ArithCalculations(n1,n2)
+n1= int(input("Enter first number"))
+n2= int(input("Enter second number"))
+
+calc= ArithCalculations(n1,n2)
 print(f'{calc.add()}')
 print(f'{calc.sub()}')
-print(f'{calc.mult()}')
+print(f'{calc.multi()}')
 
 
 try:
-    res= calc.div()
-    print(res)
+    res = calc.divi()
+    print (res)
 
 except ZeroDivisionError:
-    print('0 in denominator')
+    print('0 is in denominator')
 
 else:
     print(res)
-
 finally:
-    print('Done!!')
+    print("DONE!!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

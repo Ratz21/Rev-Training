@@ -1,0 +1,128 @@
+strftime method to format datetime objects:
+
+Year, Month, Day:
+%Y: 4-digit year (e.g., 2024)
+%y: 2-digit year (e.g., 24)
+%m: Month as a zero-padded decimal number (e.g., 04 for April)
+%B: Full month name (e.g., April)
+%b or %h: Abbreviated month name (e.g., Apr)
+Day of the Month:
+%d: Day of the month as a zero-padded decimal number (e.g., 03)
+Day of the Week:
+%A: Full weekday name (e.g., Sunday)
+%a: Abbreviated weekday name (e.g., Sun)
+Time:
+%H: Hour (24-hour clock) as a zero-padded decimal number (e.g., 13 for 1 PM)
+%I: Hour (12-hour clock) as a zero-padded decimal number (e.g., 01 for 1 PM)
+%M: Minute as a zero-padded decimal number (e.g., 05)
+%S: Second as a zero-padded decimal number (e.g., 09)
+%p: AM or PM designation
+Timezone:
+%Z: Timezone name
+%z: UTC offset in the form +HHMM or -HHMM
+
+====================================================
+os
+
+The os module in Python provides a way of using operating system dependent functionality. It allows you to interact with the operating system, such as managing files and directories, accessing environment variables, and more. Here's a basic overview of some common functionalities provided by the os module:
+
+File and Directory Operations:
+os.listdir(path): Return a list containing the names of the entries in the directory given by path.
+os.mkdir(path): Create a directory named path.
+os.makedirs(name): Recursive directory creation function.
+os.remove(path): Remove the file path.
+os.rmdir(path): Remove the directory path.
+os.path.exists(path): Check if a path exists.
+Environment Variables:
+os.environ: A mapping object representing the string environment. You can get, set, or delete environment variables using this dictionary-like object.
+os.getenv(varname, default=None): Return the value of the environment variable varname if it exists, or return default if it doesn't.
+Path Operations:
+os.path.join(path1, path2, ...): Join one or more path components intelligently. The return value is the concatenation of path1, and subsequent arguments with exactly one directory separator (os.sep) following each non-empty part except the last, meaning that the result will only end in a separator if the last part is empty.
+os.path.abspath(path): Return a normalized absolutized version of the pathname path.
+os.path.basename(path): Return the base name of pathname path.
+
+
+sys module code
+
+The sys module in Python provides access to some variables used or maintained by the Python interpreter and to functions that interact with the interpreter. It's particularly useful for accessing command-line arguments, interacting with the Python interpreter, and retrieving system-specific information. Here are some common functionalities provided by the sys module:
+
+Accessing Command-Line Arguments:
+sys.argv: A list of command-line arguments passed to a Python script. The first element (sys.argv[0]) is the script's name itself.
+Exiting the Interpreter:
+sys.exit([arg]): Exit from Python. This raises the SystemExit exception with the optional exit status arg. If arg is omitted or None, it defaults to zero (indicating successful termination).
+System-Specific Parameters and Functions:
+sys.platform: A string containing the platform identifier for the current system. Common values include 'linux', 'win32', 'darwin' (for macOS), etc.
+sys.version: A string containing the Python interpreter's version number and additional information.
+Path-related Functions:
+sys.path: A list of strings that specifies the search path for modules. It includes the directory containing the script that was used to invoke the Python interpreter.
+Standard I/O Streams:
+sys.stdin, sys.stdout, sys.stderr: Variables corresponding to the interpreter's standard input, output, and error streams, respectively.
+
+
+
+today = datetime.date.today()
+print("Today's date:", today)
+
+current_time = datetime.time(hour=12, minute=30, second=15)
+print("Current time:", current_time)
+
+tomorrow = today + datetime.timedelta(days=1)
+print("Tomorrow's date:", tomorrow)
+
+now = datetime.datetime.now()
+print('Now : ', now)
+formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")
+print("Formatted date:", formatted_date)
+
+date_string = "2023-10-15 08:30:00"
+parsed_date = datetime.datetime.strptime(date_string,"%Y-%m-%d %H:%M:%S")
+print("Parsed date:", parsed_date)
+
+print(now.strftime("%Y-%m-%d %H:%M:%S"))
+print(now.strftime("%A, %d %B %Y"))
+print(now.strftime("%I:%M %p"))
+print(now.strftime("%H:%M:%S:%Z"))
+
+'''
+import os
+
+files = os.listdir('.')
+print("Files in the current directory:", files)
+
+if not os.path.exists('my_directory'):
+    os.mkdir('my_directory')
+    print("Directory 'my_directory' created.")
+
+if os.path.exists('my_file.txt'):
+    os.remove('my_file.txt')
+    print("File 'my_file.txt' removed.")
+
+python_path = os.getenv('PYTHONPATH')
+print("PYTHONPATH:", python_path)
+
+path1 = '/path/to/dir'
+path2 = 'file.txt'
+full_path = os.path.join(path1, path2)
+print("Full path:", full_path)
+
+absolute_path = os.path.abspath('my_directory')
+print("Absolute path of 'my_directory':", absolute_path)
+
+import sys
+
+script_name = sys.argv[0]
+print("Script name:", script_name)
+if len(sys.argv) > 1:
+    print("Arguments passed:", sys.argv[1:])
+
+# sys.exit()
+
+print("Platform:", sys.platform)
+print("Python version:", sys.version)
+
+print("Python search path:", sys.path)
+
+sys.stdout.write("This is written to stdout\n")
+sys.stderr.write("This is written to stderr\n")
+
+'''
