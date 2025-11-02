@@ -18,7 +18,7 @@ string = input("Enter a string: ")
 
 string = string.replace(" ", "").lower()
 
-if string == string == string[::-1]:
+if string == string[::-1]:
   print("is a palindrome")
 else:
     print("is not a palindrome")
@@ -29,6 +29,16 @@ else:
 
 
 
+
+
+string = input("Enter a string")
+
+string = string.replace(" ", "").lower()
+
+if string == string[::-1]:
+    print("is a palindrome")
+else:
+    print("is not a palindrome")
 
 
 

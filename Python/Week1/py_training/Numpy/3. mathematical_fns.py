@@ -8,6 +8,9 @@ tangent, etc.
 
 import numpy as np
 
+from scipy import stats
+
+
 angles = np.array([0, np.pi/2, np.pi])
 print(angles)
 print("Sine of angles:", np.sin(angles))
