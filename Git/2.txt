@@ -1,0 +1,19 @@
+# on main
+echo "Line" > file.txt
+git add file.txt; git commit -m "add file"
+
+# branch A
+git checkout -b A
+echo "A version" > file.txt
+git commit -am "A edits file"
+
+# branch B from main
+git checkout main
+git checkout -b B
+echo "B version" > file.txt
+git commit -am "B edits file"
+
+# merge B into A
+git checkout A
+git merge B
+# Git reports conflict in file.txt

@@ -1,1 +1,63 @@
 The name is Rajdeep
+
+
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+git config --global core.editor "nano"   # or vim/code
+
+
+
+git config --global credential.helper cache
+
+
+
+mkdir myproj
+cd myproj
+git init                # makes .git/ — your repo
+echo "hello" > readme.md
+git add readme.md
+git commit -m "Initial commit"
+
+
+
+# check status
+git status
+
+# see changes (unstaged)
+git diff
+
+# stage
+git add file1 file2
+# or stage all changes
+git add -A
+
+
+
+# commit staged changes
+git commit -m "Describe what changed concisely"
+
+
+
+
+git log --oneline --graph --decorate --all
+
+
+
+
+
+
+git branch                # list local branches
+git branch feature-x      # create branch
+git checkout feature-x    # switch to it
+# (newer)
+git switch feature-x
+
+# create + switch
+git checkout -b feature-x
+# or
+git switch -c feature-x
+
+
+git checkout main
+git merge feature-x
+

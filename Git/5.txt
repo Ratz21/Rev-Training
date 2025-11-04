@@ -1,1 +1,25 @@
+# add remote (e.g., origin)
+git remote add origin git@host:user/repo.git
+git push -u origin main   # -u sets upstream for future git push
 Will write  py code
+
+
+
+git fetch origin          # downloads refs, doesn't merge
+git merge origin/main     # merge remote main into local main
+# or in one step:
+git pull origin main      # fetch + merge
+
+
+git checkout feature
+git rebase main
+# resolve conflicts, then:
+git rebase --continue
+
+
+
+git stash           # saves changes, cleans working tree
+git stash list
+git stash apply     # reapplies last stash (keeps stash)
+git stash pop       # apply and remove stash
+git stash branch stash-branch-name   # create branch from stash
