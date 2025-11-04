@@ -1,4 +1,17 @@
+USE RevatureDB
+
+CREATE TABLE Employee (
+EmpID INT PRIMARY KEY ,
+Name VARCHAR(35),
+Dept VARCHAR(25),
+Salary DECIMAL(10,2)
+);
+
+INSERT INTO Employee VALUES(1,'Raj','IT',90000);
 
 
-USE RevatureDB;
+UPDATE Employee SET Name = 'SHRATZ' WHERE EmpID =1;
+
+SELECT * FROM Employee;
+
 
