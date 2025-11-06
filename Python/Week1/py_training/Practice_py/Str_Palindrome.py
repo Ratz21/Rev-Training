@@ -28,9 +28,6 @@ else:
 
 
 
-
-
-
 string = input("Enter a string")
 
 string = string.replace(" ", "").lower()
@@ -41,9 +38,6 @@ else:
     print("is not a palindrome")
 
 
-
-
-
 """
 string[::-1] → reverses the string using slicing.
 
@@ -51,3 +45,39 @@ string[::-1] → reverses the string using slicing.
 
 .replace(" ", "") → removes spaces in case you’re checking phrases like "nurses run".
 """
+
+
+
+
+
+
+
+string = input ("Enter a string")
+
+string = string.replace(" " , "").lower()
+
+if string == string[:: -1]:
+    print("is a palindrome")
+else:
+    print("is not a palindrome")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
