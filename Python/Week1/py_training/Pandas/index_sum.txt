@@ -1,0 +1,93 @@
+
+
+numbers = [1,2,3,4,5,6]
+
+even_index_sum = 0
+
+for i in range (len(numbers)):
+
+    if i % 2 == 0:
+    even_ sum += n 
+  even_index_sum += numbers[i]
+
+print("Sum of Even numbers index",evensum)
+
+
+
+
+Session 2
+3 steps to start your journey to have a great attitude:
+a) Be Proactive - Take conscious control of your life - Set goals and work to achieve them - Engineer your events and don’t merely react to them
+b) Become a thorough professional - Become customer focussed - Delivery without excuse - Be courageous to speak out (assert yourself)
+c) Be resilient through adversities - Learn from others - Become self-motivated - Handle emotions well (especially fear) 
+ 
+Homework
+There is, Is there? / There are, are there?
+1. Choose the right answer.
+1) There is/ There are some milk in my coffee.
+2) There is/ There are no interesting stories in this book.
+3) There is/ There are a lot of good people in our school.
+4) There is/ There are some bread in the kitchen.
+5) There is/ There are ten desks in the classroom.
+6) There is/ There are two armchairs in the room.
+7) There is/ There are two supermarkets in this street.
+8) There is/ There are a pretty doll for your daughter on the table.
+9) There is/ There are a present for you.
+10) There is/ There are a beautiful swimming pool near our school.
+11) There is/ There are a new TV in this room.
+12) There is/ There are some mistakes in your homework.
+13) There is/ There are a lot of snow outdoors.
+14) There is/ There are tomatoes and cucumbers in this salad.
+15) There is/ There are not any water in the glass. 
+ 
+2. Put in  to be (is or are): 
+ 
+There _______an apple tree in the garden.
+There _______ funny monkeys in the zoo.
+There _______a fat cat on the sofa.
+There _______ chairs in the classroom.
+There_______ many pens on the table.
+There _______a bird in the tree.
+There _______many kites in the sky.
+There _______an elephant in the zoo.
+There_______ some water in the bottle.
+There _______pretty pictures in the book.
+There_______ many people in the street.
+There_______ many children in the classroom.
+There _______a tiger in the jungle.
+There _______some tea in the cup.
+There_______ bananas on the plate.
+There_______ many chicks in this yard.
+There _______a shop nears our house.
+There _______many bees near the flowers.
+There _______a bird in the cage.
+There_______ three windows in the room.
+There_______ many streets in the city. 
+ 
+Exercise 7
+Have verb – present tense
+7.1 Write the short form
+1. We have got   ………………
+2. he has got   ……………………
+3. they have got  ………………..
+4. she has not got ……………………..
+5. it has got  ……………………………….
+6. I have not got  ……………………… 
+ 
+7.2 Ask quests with the have verb
+1. (you/an umbrella?)   ………………………………..
+2. (you /a passport?)   …………………………………
+3. (your father/a car?)  …………………………………
+4. (Carol / many friends?) ………………………………
+5. (you/any brothers or sisters?)  ……………………………
+6. (how much money/ we?)  ……………………………………
+7. (what/kind of car/ Julie?)  …………………………………… 
+ 
+7.3 Put in have got, has got or have not got etc.
+1. Sarah  …………….a car. She goes everywhere by bicycle.
+2. They like animals.  They ………………….. three dogs and two cats.
+3. Charles isn’t happy.  He……………………a lot of problems.
+4. They don’t read much. They………………….many books.
+5. Where is my pen? I don’t know, I ………………….it.
+6. Julie wants to go to the concert, but she …………………a ticket.
+ 
