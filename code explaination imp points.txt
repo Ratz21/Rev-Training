@@ -1,0 +1,116 @@
+code explaination imp points
+
+
+
+"""
+
+
+by passing the code
+shutil power shell util copying and saving of the files by this package in python
+
+explain the project know in and out understand and explain
+
+step 1: py spark session from pyspark and sql import
+
+
+step 2: load CSV
+
+hospital df spark,read ,csv (../ header = true infershcema = true)
+patuent_df = spark.readcsv ()
+
+
+
+
+
+step 3: basic transformation
+
+from pyspark.sql functions uimport col,avg,count rouns as rnd
+
+
+#join the files  jpin [atients weith hospital info
+
+joined_df patients df.join gro[ by hosptial num .agg
+rnd avg ("ttreamtn_cost 2. alias (avg .treatment_cost
+
+count (patient_id . alias patientcount
+)
+
+avg_cost.show
+ flattenting process denormalization
+
+# top 3 hosptial  by patient load
+
+top_hospitals = avg+cost.ordersby(col("Patient_count").desc())limit(3)
+top_hosptial,show()
+
+
+# avg admission days by diagossis
+avg_dail_diag = joined_df.gopyby("diag).agg(
+rnd (avg (" admission_days ) 2) alias ("avg_admission_days)
+
+)
+
+avg_days_diag.show()
+
+
+# avg rating vs avg cost by state
+ratving vs cost = joined df.group by (state . agg(
+rnd (avg("Rating), 2).alias("Avg_rating"),
+rnd(avg(:Treamt_cost"
+ 2,
+
+
+
+ step 4: save insights
+
+ output_dir = "../output-data"
+ os.mkdir(ouput_dir , exist_ok=true)
+
+
+ # clean up old outputs
+
+ for subdir in ["avg_cost_per_hospital", "avg_days_by_diagonos", ""
+ path = os.path.join(opt_dir,subdir)
+ if os.path.exsist(path):
+ shutil.rmtree(path(pathP
+
+
+  # internally py spark and pandasd datafram are diff
+
+ try:
+
+ avg_cost.write.mode("overwrite") .csv(os.path.join(output_dir, "avg_cost_per_hpsputal") ,head
+ avg_days_diag.write.mode
+
+
+
+step 5 convert to pandas for visulization
+
+how to read from pandas ->>>
+import pandas pd
+pd.read_csv   avg_cost_pd = pd.read_csv ("../output-data/avg_cost_per_hospital.csv")
+ratring_cost_pd = pd.read_csv("../output-data/rating_vs_diagonis")
+
+
+
+
+current one not the orignal one
+
+# avg ratog vs avg cost by tate
+
+rating vs cost = joined_df.groufby("state") . agg()
+rnd(avg(rating") , 2).alias (:av_rating"),
+rating csv.
+
+.
+and also we need to install packs pandas
+matplot lib , py spark , shututil
+
+
+
+plot 2 avg rating vs cost by store
+
+i need to have insights and data explain ur data add uniq insigt what is data engineering undersating data nd primarily ETL
+
+
+"""

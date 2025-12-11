@@ -1,0 +1,24 @@
+order_id,product_id,quantity,order_ts,customer_id,cus_name
+101,1,2,2025-11-20 12:10:00,C001,Rajdeep
+102,2,1,2025-11-20 13:02:05,C002,Raman
+103,3,5,2025-11-21 09:30:45,sudarshan
+104,4,1,2025-11-22 15:00:00,C003,pratik
+105,1,0,2025-11-22 15:05:00,C004,TripleH
+106,2,3,2025-11-23 08:00:00,C002,undertaker
+107,99,1,2025-11-24 12:00:00,C005,Roman reigns
+108,3,2,2025-11-24 13:30:00,C006,Kane
+109,4,1,2025-11-24 14:00:00,C007,bijay
+110,2,1,invalid_timestamp,C008,Krishnakant
+
+
+
+1:parameterized jobs and normal job
+2:what do u mean by data quality and validation framework - open source great expedetion integration of notebook and documentaion 
+development AWS dq for spark , stores in single layer. dlk for pipelines validation. 
+
+3:multiple jobs running in seq few executed and some are out of time how we will solve that problem - even with retry mechanism what is the solution. distribution of data which will reduce the exection time 
+4:job creation steps : 
+5: delta lake main data where it will be stored json -> parquet files  
+6: what is CDC = change data capture 
+7: SCD concept
+8: whats 

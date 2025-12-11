@@ -1,0 +1,59 @@
+--> join operation 
+
+# inner join operation 
+
+select s.Id as sales_Id,
+p.product,
+p.price,
+s.purchase_date
+from sales_table s 
+join product_table p
+on s.product_Id = p.Id;
+
+
+--> query to select top 10 most expensive products
+
+select product , price
+
+from product_table
+
+order by price desc 
+limit 10;
+
+
+--> calculate the average number of sales per month.
+To compute the average number of sales per month, use the EXTRACT function to group sales by month and COUNT to count the number of sales per month:
+
+
+select extract(month from purchase_date) as month,
+count(id) as total_sales,
+avg(count(id)) over () as average_Sales
+from sales_table
+group by month;
+
+
+-->SQL query to find the total number of deliveries by product.
+
+select d.id as total_deliveries
+from delivery_table d
+join product_table p 
+on d.product_id = p.Id
+group by p.product;
+
+
+--> SQL query to count the number of unique products sold in the last week.
+select * from sales_table where purchase_date >= date_sub(current_date(), interval 30 day);
+
+
+
+--> write a sql query to group sales data by product and calculate total revenue for each 
+using group by 
+
+select p.product,
+sum(p.Price) as total_revenue
+from sales_table as 
+join product_table p 
+on s.product_id = p.id
+group by p.product;
+
+

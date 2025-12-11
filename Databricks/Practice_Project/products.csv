@@ -1,0 +1,6 @@
+product_id,product_name,category,price
+1,Blue T-Shirt,apparel,199.99
+2,Red Mug,home,249.50
+3,Notebook,stationery,49.0
+4,Headphones,electronics,1299.0
+5,Defective Item,other,-10.00
